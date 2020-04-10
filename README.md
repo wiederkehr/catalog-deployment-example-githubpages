@@ -15,7 +15,7 @@ For more details about how to use Catalog, check out the [documentation](https:/
 1. Setup Github Pages on the `Settings` page of your Github repository.
 2. Select the `/doc` folder of the `master` branch as the source for your Github Pages.
 
-![Github Pages section on the Settings page](https://github.com/wiederkehr/catalog-githubpages-example/raw/master/catalog/static/images/github-pages-source.png "Github Pages section on the Settings page")
+![Github Pages section on the Settings page](https://github.com/wiederkehr/catalog-githubpages-example/raw/master/catalog/static/github-pages-source.png "Github Pages section on the Settings page")
 
 ## 3. Publish to Github Pages
 
