@@ -13,3 +13,5 @@ Welcome to your freshly set up Catalog. To get started immediately, check out th
 - `static/`: A directory with files that are served statically. For example the Catalog logo above.
 
 For more details about how to use Catalog, check out the [documentation](https://docs.catalog.style/).
+
+_I’m just adding a few lines here to test the build and deploy github workflow._
