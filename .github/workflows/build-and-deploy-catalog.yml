@@ -17,8 +17,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: Build Catalog
+    - name: Install Catalog
       run: yarn
+    - name: Build Catalog
       run: yarn catalog-build --public-url=/catalog-example/ --out=docs
     - name: Commit Changes
       uses: elstudio/actions-js-build/commit@v3
