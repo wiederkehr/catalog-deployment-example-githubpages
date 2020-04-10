@@ -1,10 +1,10 @@
 {
-  "catalog.js": "static/catalog.50a700ab.js",
-  "catalog.js.map": "static/catalog.50a700ab.js.map",
-  "manifest.js": "static/manifest.3ea9114c.js",
-  "manifest.js.map": "static/manifest.3ea9114c.js.map",
-  "static/0.6e933b94.chunk.js": "static/0.6e933b94.chunk.js",
-  "static/0.6e933b94.chunk.js.map": "static/0.6e933b94.chunk.js.map",
+  "catalog.js": "static/catalog.86c88f4f.js",
+  "catalog.js.map": "static/catalog.86c88f4f.js.map",
+  "manifest.js": "static/manifest.2fd461d1.js",
+  "manifest.js.map": "static/manifest.2fd461d1.js.map",
+  "static/0.a2c2f54b.chunk.js": "static/0.a2c2f54b.chunk.js",
+  "static/0.a2c2f54b.chunk.js.map": "static/0.a2c2f54b.chunk.js.map",
   "vendor.js": "static/vendor.bd8b794f.js",
   "vendor.js.map": "static/vendor.bd8b794f.js.map"
 }
