@@ -17,7 +17,7 @@ jobs:
     - name: Install Catalog
       run: yarn
     - name: Build Catalog
-      run: yarn catalog-build --public-url=/catalog-example/ --out=docs
+      run: yarn catalog-build --public-url=/catalog-githubpages-example/ --out=docs
     - name: Commit Changes
       uses: elstudio/actions-js-build/commit@v3
       with:
