@@ -4,21 +4,20 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-    - name: Install Catalog
-      run: yarn
-    - name: Build Catalog
-      run: yarn catalog-build --public-url=/catalog-githubpages-example/ --out=docs
-    - name: Commit Changes
-      uses: elstudio/actions-js-build/commit@v3
-      with:
-        commitMessage: Build Catalog
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Install Catalog
+        run: yarn
+      - name: Build Catalog
+        run: yarn catalog-build --public-url=/catalog-deployment-example-githubpages/ --out=docs
+      - name: Commit Changes
+        uses: elstudio/actions-js-build/commit@v3
+        with:
+          commitMessage: Build Catalog
