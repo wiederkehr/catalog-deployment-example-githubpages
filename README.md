@@ -36,7 +36,7 @@ Alternatively, you can build Catalog automatically whenever you push changes to 
 1. Setup a new workflow on the `Actions` page of your Github repository.
 2. Skip the template selection and set up a fresh workflow for yourself.
 3. Give your workflow a descriptive name (i.e. `build-and-deploy-catalog.yml`).
-4. Copy and paste the following workflow and change the `[repository-name]` to the name of your repository.
+4. Copy and paste the following workflow.
 5. Save the workflow with _Start commit_ to commit the workflow file to your repository.
 6. Navigate to `Actions` page of your repository to see your new workflow listed.
 7. Make and commit a code change to your Catalog to see your publication workflow in action).
@@ -63,8 +63,14 @@ jobs:
         node-version: '12.x'
     - name: Install Catalog
       run: yarn
+    - name: Set Environment Variable for Repository Name
+      run:   echo ::set-env name=REPOSITORY_NAME::$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}' | sed -e "s/:refs//")
+      shell: bash
+    - name: Echo Repository Name
+      run:   echo "$REPOSITORY_NAME"
+      shell: bash
     - name: Build Catalog
-      run: yarn catalog-build --public-url=/[repository-name]/ --out=docs
+      run: yarn catalog-build --public-url=/"$REPOSITORY_NAME"/ --out=docs
     - name: Commit Changes
       uses: elstudio/actions-js-build/commit@v3
       with:
