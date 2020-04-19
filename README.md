@@ -2,6 +2,8 @@
 
 Example for creating and publishing an instance of [Catalog](https://catalog.style/) using [Github Pages](https://pages.github.com/).
 
+![Build and Deploy Catalog](https://github.com/wiederkehr/catalog-deployment-example-githubpages/workflows/Build%20and%20Deploy%20Catalog/badge.svg)
+
 ## 1. Install Catalog
 
 1. Create a new Catalog following these [instructions](https://docs.catalog.style/installation/create-catalog).
