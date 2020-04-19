@@ -1,6 +1,6 @@
 # Publish Catalog on Github Pages
 
-Example for creating and publishing an fresh instance of [Catalog](https://catalog.style/) using [Github Pages](https://pages.github.com/).
+Example for creating and publishing an instance of [Catalog](https://catalog.style/) using [Github Pages](https://pages.github.com/).
 
 ## 1. Install Catalog
 
