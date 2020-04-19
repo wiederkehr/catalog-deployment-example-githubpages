@@ -46,7 +46,7 @@ Alternatively, you can build Catalog automatically whenever you push changes to 
 
 #### Workflow
 
-```javascript
+```
 name: Build and Deploy Catalog
 
 on: [push]
